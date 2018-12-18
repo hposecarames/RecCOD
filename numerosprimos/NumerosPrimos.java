@@ -16,10 +16,10 @@ public class NumerosPrimos {
     public static boolean primo = false;
 
     public static void main(String arg[]) {
-        int numDigitos = 0;
-        int ndigitos = 0;
-        numDigitos = Integer.parseInt(arg[0]);
-        if (numDigitos <= 0) {
+        int numeroDigitos = 0;
+        int cantidaddigitos = 0;
+        numeroDigitos = Integer.parseInt(arg[0]);
+        if (numeroDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
         for (int i = 1; i <= 99999; i++) {
@@ -31,9 +31,9 @@ public class NumerosPrimos {
                 divisionEntera = divisionEntera / 10;
                 contador++;
             }
-            ndigitos = contador;
+            cantidaddigitos = contador;
 
-            if (ndigitos == numDigitos) {
+            if (cantidaddigitos == numeroDigitos) {
                 if (i < 4) {
                     primo = true;
                 } else {
